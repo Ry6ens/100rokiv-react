@@ -1,0 +1,51 @@
+@use './mixins';
+@import 'fonts';
+@import 'reset';
+@import 'common';
+
+:root {
+    --font-family: Comfortaa, Sans-serif;
+
+    --text-size-mobile: 10px;
+    --letter-spacing-mobile: 0.14em;
+
+
+    --text-size: 12px;
+    --line-height: 2;
+    --letter-spacing: 0.24em;
+
+    --text-content: 14px;
+    --line-height-content: 1.7;
+    --letter-spacing-content: 0.06em;
+
+    --text-title-tablet: 20px;
+
+    --text-title-desktop: 20px;
+    --line-height-desktop: 1.2;
+    --letter-spacing-desktop: 0.06em;
+
+    --color-text: #43291b;
+    --color-text-invert: #fff;
+
+    --color-bg: #fdfbf8;
+    --color-bg-white: #fff;
+    --color-bg-panel: #f2eee8;
+    --color-bg-line: #F6F3EE;
+
+    --text-transform: uppercase;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--text-size);
+    letter-spacing: var(--letter-spacing);
+
+    color: var(--color-text);
+    background-color: var(--color-bg);
+
+    text-transform: var(--text-transform);
+
+    // &.no-scroll {
+    //     overflow: hidden;
+    // }
+}

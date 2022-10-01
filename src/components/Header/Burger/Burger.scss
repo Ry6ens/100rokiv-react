@@ -1,0 +1,44 @@
+.hamburger-menu_nav {
+    position: fixed;
+    top: 84px;
+    left: -105%;
+
+    height: 100%;
+    width: 100vw;
+
+    z-index: 20;
+
+    display: flex;
+    flex-direction: column;
+
+    font-size: 12px;
+    letter-spacing: var(--letter-spacing-mobile);
+
+    background-color: var(--color-bg);
+    overflow-y: scroll;
+    transition: 0.8s;
+}
+
+.is-active .hamburger-menu_nav {
+    left: 0;
+    transition: 0.4s;
+}
+
+.hamburger-menu_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    margin-bottom: 60px;
+}
+
+.hamburger-menu_mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hamburger-menu_mobile address {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,110 @@
+@use '../../styles/mixins';
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 40px;
+
+    @include mixins.mq(desktop) {
+        padding: 20px;
+    }
+}
+
+.headerAddress {
+    // padding-top: 20px;
+
+    font-size: var(--text-size);
+    letter-spacing: var(--letter-spacing);
+    color: var(--color-text);
+}
+
+.hoverAddress {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 0%;
+        background-color: currentColor;
+        height: 1px;
+        bottom: -6px;
+        transition: width 0.2s;
+        pointer-events: none;
+    }
+
+    &:hover:after,
+    :focus:after {
+        width: 100%;
+        color: var(--text-color);
+    }
+}
+
+.btnBook {
+    position: relative;
+
+    font-size: var(--text-size-mobile);
+    letter-spacing: var(--letter-spacing-mobile);
+    color: var(--color-text);
+
+    @include mixins.mq(desktop) {
+        // padding-top: 20px;
+
+        font-size: var(--text-size);
+        letter-spacing: var(--letter-spacing);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        background-color: currentColor;
+        height: 1px;
+        bottom: -6px;
+        transition: width 0.2s;
+        pointer-events: none;
+    }
+
+    &:hover:after {
+        width: 0%;
+    }
+}
+
+.tel {
+    position: relative;
+
+    // padding-top: 20px;
+
+    font-size: var(--text-size);
+    letter-spacing: var(--letter-spacing);
+
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 0%;
+        background-color: currentColor;
+        height: 1px;
+        bottom: -6px;
+        transition: width 0.2s;
+        pointer-events: none;
+    }
+
+    &:hover:after,
+    :focus:after {
+        width: 100%;
+        color: var(--text-color);
+    }
+}
+
+.overlay {
+    display: flex;
+    gap: 50px;
+}
