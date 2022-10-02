@@ -16,7 +16,7 @@
 
     @include mixins.mq(tablet) {
         font-size: var(--text-title-tablet);
-        font-weight: 600;
+        font-weight: 700;
         line-height: var(--line-height-title-tablet);
         letter-spacing: var(--letter-spacing-title-tablet);
     }
@@ -33,7 +33,21 @@
 .floorsList {
     display: flex;
     flex-direction: column;
-    gap: 25px
+    gap: 25px;
+
+    @include mixins.mq(desktop) {
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+    }
+}
+
+.floorsItem {
+    overflow: hidden;
+
+    @include mixins.mq(desktop) {
+        width: 20vw;
+    }
 }
 
 .img {
@@ -41,6 +55,10 @@
     height: 85vw;
     object-fit: cover;
     transition: transform 1s;
+
+    @include mixins.mq(desktop) {
+        height: 30vw;
+    }
 }
 
 .floorsTitle {
@@ -48,9 +66,14 @@
     padding-bottom: 28px;
 
     font-size: var(--text-size);
+    font-weight: 700;
     line-height: var(--line-height);
     letter-spacing: var(--letter-spacing);
     text-align: center;
 
     background-color: var(--color-bg-panel);
+}
+
+.sectionFloors {
+    margin-bottom: 50px;
 }

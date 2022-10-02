@@ -20,21 +20,21 @@ export default function Home() {
           дивовижними рецептами та переосмисленими традиціями.
         </p>
       </section>
-      <section>
+      <section className={s.sectionFloors}>
         <ul className={s.floorsList}>
-          <li>
+          <li className={s.floorsItem}>
             <Link to="/ground">
               <img className={s.img} src={Ground} alt="Перший поверх" />
               <h2 className={s.floorsTitle}>Перший поверх</h2>
             </Link>
           </li>
-          <li>
+          <li className={s.floorsItem}>
             <Link to="/above">
               <img className={s.img} src={Above} alt="Другий поверх" />
               <h2 className={s.floorsTitle}>Другий поверх</h2>
             </Link>
           </li>
-          <li>
+          <li className={s.floorsItem}>
             <Link to="/redroom">
               <img className={s.img} src={Redroom} alt="Червона зала" />
               <h2 className={s.floorsTitle}>Червона зала</h2>

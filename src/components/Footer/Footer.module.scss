@@ -1,6 +1,6 @@
 @use '../../styles/mixins';
 
-.footer {
+.footerBottom {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,25 +20,53 @@
     }
 }
 
-.title {
+.titleBottom {
     font-size: var(--text-size);
     line-height: var(--line-height);
     letter-spacing: var(--letter-spacing);
 
     color: var(--color-text-invert);
+}
 
-    // @include mixins.mq(tablet) {
-    //     font-size: var(--text-size);
-    //     line-height: var(--line-height);
-    //     letter-spacing: var(--letter-spacing);
-    // }
+.title {
+    margin-bottom: 20px;
+
+    font-size: var(--text-size);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+
+    @include mixins.mq(desktop) {
+        margin-bottom: 0px;
+    }
+}
+
+.text {
+    font-size: 10px;
+    line-height: var(--line-height);
+    letter-spacing: 0.14em;
 }
 
 .social {
     display: flex;
     gap: 20px;
+}
+
+.logo {
+
+
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid var(--color-bg-line);
 
     @include mixins.mq(desktop) {
-        gap: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.schedule {
+    @include mixins.mq(desktop) {
+        text-align: right;
     }
 }

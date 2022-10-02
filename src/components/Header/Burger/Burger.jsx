@@ -7,6 +7,9 @@ import Navigation from "../../Navigation/Navigation";
 
 export default function Burger() {
   const handleClick = (e) => {
+    if (e.target.nodeName === "UL") {
+      return;
+    }
     e.currentTarget.classList.toggle("is-active");
     document.body.classList.toggle("no-scroll");
   };

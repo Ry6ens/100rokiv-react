@@ -2,13 +2,13 @@
 
 .hamburger-menu_nav {
     position: fixed;
-    top: 44px;
+    top: 64px;
     left: 0px;
     transform: translateX(-100%);
 
     padding: 40px 20px;
 
-    height: 100%;
+    height: calc(100% - 50px);
     width: 100vw;
 
     z-index: 20;
@@ -21,12 +21,12 @@
     letter-spacing: var(--letter-spacing);
 
     background-color: var(--color-bg);
-    overflow-y: scroll;
+    overflow-y: auto;
     transition: 0.8s;
 }
 
 .is-active .hamburger-menu_nav {
-    transform: none;
+    transform: translateX(0);
     transition: 0.4s;
 }
 
@@ -51,25 +51,25 @@
 
 .hamburger-menu_item {
     position: relative;
-    
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: 0px;
-            left: 0px;
-            width: 0%;
-            background-color: currentColor;
-            height: 1px;
-            bottom: -6px;
-            transition: width 0.2s;
-            pointer-events: none;
-        }
-    
-        &:hover:after,
-        :focus:after {
-            width: 100%;
-            color: var(--text-color);
-        }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 0%;
+        background-color: currentColor;
+        height: 1px;
+        bottom: -6px;
+        transition: width 0.2s;
+        pointer-events: none;
+    }
+
+    &:hover:after,
+    :focus:after {
+        width: 100%;
+        color: var(--text-color);
+    }
 }
 
 .hamburger-address_item {
