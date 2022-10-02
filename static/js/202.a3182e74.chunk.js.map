@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/202.a3182e74.chunk.js","mappings":"gLAAe,SAASA,IACtB,OAAO,uBACR,C","sources":["pages/MenuPage/MenuPage.jsx"],"sourcesContent":["export default function MenuPage() {\n  return <></>;\n}\n"],"names":["MenuPage"],"sourceRoot":""}
