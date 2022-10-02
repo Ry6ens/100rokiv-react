@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/100rokiv-react/static/css/main.fce70fd2.css",
-    "main.js": "/100rokiv-react/static/js/main.c37d32cf.js",
-    "static/css/833.cc1cb097.chunk.css": "/100rokiv-react/static/css/833.cc1cb097.chunk.css",
-    "static/js/833.ddc73a35.chunk.js": "/100rokiv-react/static/js/833.ddc73a35.chunk.js",
+    "main.css": "/100rokiv-react/static/css/main.b88217b6.css",
+    "main.js": "/100rokiv-react/static/js/main.22b43616.js",
+    "static/css/833.3ec0a7f6.chunk.css": "/100rokiv-react/static/css/833.3ec0a7f6.chunk.css",
+    "static/js/833.8c15207e.chunk.js": "/100rokiv-react/static/js/833.8c15207e.chunk.js",
     "static/js/992.f6b9284c.chunk.js": "/100rokiv-react/static/js/992.f6b9284c.chunk.js",
     "static/js/202.a3182e74.chunk.js": "/100rokiv-react/static/js/202.a3182e74.chunk.js",
     "static/js/83.7467667d.chunk.js": "/100rokiv-react/static/js/83.7467667d.chunk.js",
@@ -23,10 +23,10 @@
     "static/media/instagram.svg": "/100rokiv-react/static/media/instagram.bb9ea0f45adbb6c08cfd1626295c7c72.svg",
     "index.html": "/100rokiv-react/index.html",
     "static/media/facebook.svg": "/100rokiv-react/static/media/facebook.752525714e58488662ce0985f0159f6c.svg",
-    "main.fce70fd2.css.map": "/100rokiv-react/static/css/main.fce70fd2.css.map",
-    "main.c37d32cf.js.map": "/100rokiv-react/static/js/main.c37d32cf.js.map",
-    "833.cc1cb097.chunk.css.map": "/100rokiv-react/static/css/833.cc1cb097.chunk.css.map",
-    "833.ddc73a35.chunk.js.map": "/100rokiv-react/static/js/833.ddc73a35.chunk.js.map",
+    "main.b88217b6.css.map": "/100rokiv-react/static/css/main.b88217b6.css.map",
+    "main.22b43616.js.map": "/100rokiv-react/static/js/main.22b43616.js.map",
+    "833.3ec0a7f6.chunk.css.map": "/100rokiv-react/static/css/833.3ec0a7f6.chunk.css.map",
+    "833.8c15207e.chunk.js.map": "/100rokiv-react/static/js/833.8c15207e.chunk.js.map",
     "992.f6b9284c.chunk.js.map": "/100rokiv-react/static/js/992.f6b9284c.chunk.js.map",
     "202.a3182e74.chunk.js.map": "/100rokiv-react/static/js/202.a3182e74.chunk.js.map",
     "83.7467667d.chunk.js.map": "/100rokiv-react/static/js/83.7467667d.chunk.js.map",
@@ -42,7 +42,7 @@
     "386.db854d82.chunk.js.map": "/100rokiv-react/static/js/386.db854d82.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fce70fd2.css",
-    "static/js/main.c37d32cf.js"
+    "static/css/main.b88217b6.css",
+    "static/js/main.22b43616.js"
   ]
 }
