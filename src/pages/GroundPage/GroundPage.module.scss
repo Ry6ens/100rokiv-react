@@ -1,0 +1,66 @@
+.section {
+    margin-bottom: 30px;
+}
+
+.img {
+    width: 100%;
+    // transform: translateX(-20px);
+
+    margin-bottom: 40px;
+}
+
+.title {
+    margin-bottom: 25px;
+
+    font-size: 14px;
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+
+    text-align: center;
+}
+
+.text {
+    margin-bottom: 25px;
+
+    font-size: var(--text-size-mobile);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+
+    text-align: center;
+}
+
+.btnLink {
+    text-align: center;
+}
+
+.btnBook {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        background-color: currentColor;
+        color: var(--text-color);
+        height: 1px;
+        bottom: -6px;
+        transition: width 0.2s;
+        pointer-events: none;
+    }
+}
+
+.sectionMenu {
+    background: linear-gradient(to bottom, var(--color-bg-panel), var(--color-bg));
+}
+
+.galleryMenuList {
+    display: flex;
+    flex-direction: column;
+    gap: 25px
+}
+
+.imgMenu {
+    width: 100%;
+}
