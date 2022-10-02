@@ -1,0 +1,56 @@
+@use '../../styles/mixins';
+
+.sectionTitle {
+    margin-bottom: 50px;
+}
+
+.title {
+    margin-bottom: 25px;
+
+    font-size: var(--text-title);
+    font-weight: 500;
+    line-height: var(--line-height-title);
+    letter-spacing: var(--letter-spacing-title);
+
+    text-align: center;
+
+    @include mixins.mq(tablet) {
+        font-size: var(--text-title-tablet);
+        font-weight: 600;
+        line-height: var(--line-height-title-tablet);
+        letter-spacing: var(--letter-spacing-title-tablet);
+    }
+}
+
+.text {
+    font-size: var(--text-size);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+
+    text-align: center;
+}
+
+.floorsList {
+    display: flex;
+    flex-direction: column;
+    gap: 25px
+}
+
+.img {
+    width: 100%;
+    height: 85vw;
+    object-fit: cover;
+    transition: transform 1s;
+}
+
+.floorsTitle {
+    padding-top: 28px;
+    padding-bottom: 28px;
+
+    font-size: var(--text-size);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+    text-align: center;
+
+    background-color: var(--color-bg-panel);
+}

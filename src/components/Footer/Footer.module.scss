@@ -1,0 +1,44 @@
+@use '../../styles/mixins';
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0px 20px;
+
+    height: 50px;
+
+    background-color: var(--color-text);
+
+    @include mixins.mq(tablet) {
+        height: 70px;
+
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.title {
+    font-size: var(--text-size);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+
+    color: var(--color-text-invert);
+
+    // @include mixins.mq(tablet) {
+    //     font-size: var(--text-size);
+    //     line-height: var(--line-height);
+    //     letter-spacing: var(--letter-spacing);
+    // }
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+
+    @include mixins.mq(desktop) {
+        gap: 40px;
+    }
+}

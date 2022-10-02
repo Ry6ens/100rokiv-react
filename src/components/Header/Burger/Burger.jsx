@@ -1,10 +1,14 @@
-// import s from "./Burger.module.scss";
+import { NavLink } from "react-router-dom";
+
 import "./hamburgers.scss";
 import "./Burger.scss";
+
+import Navigation from "../../Navigation/Navigation";
 
 export default function Burger() {
   const handleClick = (e) => {
     e.currentTarget.classList.toggle("is-active");
+    document.body.classList.toggle("no-scroll");
   };
 
   return (
@@ -12,32 +16,44 @@ export default function Burger() {
       <div
         className="hamburger hamburger--squeeze"
         type="button"
-        // aria-expanded="false"
-        // data-menu-button
         onClick={handleClick}
       >
         <span className="hamburger-box">
           <span className="hamburger-inner"></span>
         </span>
-        <nav className="hamburger-menu_nav">
-          <ul className="hamburger-menu_list">
-            <li>100років</li>
-            <li>Забронювати столик</li>
-            <li>Меню</li>
-            <li>Доставка їжі</li>
-            <li>Враження в подарунок</li>
-            <li>Майбутні події</li>
-            <li>Засновники</li>
-            <li>Наші контакти</li>
-          </ul>
+        <div className="hamburger-menu_nav">
+          <Navigation navClass="hamburger-menu_list" />
           <div className="hamburger-menu_mobile">
             <ul className="hamburger-menu_list">
-              <li>Політика конфіденційності</li>
-              <li>Публічна оферта</li>
+              <li className="hamburger-menu_item">
+                <a
+                  href="https://www.instagram.com/100rokivtomuvpered/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li className="hamburger-menu_item">
+                <a
+                  href="https://www.facebook.com/100rokivtomuvpered"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li className="hamburger-menu_item">
+                <NavLink to="/privacy-policy">
+                  Політика конфіденційності
+                </NavLink>
+              </li>
+              <li className="hamburger-menu_item">
+                <NavLink to="/public-offer">Публічна оферта</NavLink>
+              </li>
             </ul>
-            <address>
+            <address className="hamburger-address_item">
               <a
-                className="s.hoverAddress"
                 href="https://goo.gl/maps/Jof1XhNqpWWVxGcu6"
                 rel="noreferrer"
                 target="_blank"
@@ -45,9 +61,11 @@ export default function Burger() {
                 вул. Володимирська 4, м. Київ
               </a>
             </address>
-            <a href="tel:+380680686975">Тел: +38 (068) 068-69-75</a>
+            <a className="hamburger-address_item" href="tel:+380680686975">
+              Тел: +38 (068) 068-69-75
+            </a>
           </div>
-        </nav>
+        </div>
       </div>
     </>
   );

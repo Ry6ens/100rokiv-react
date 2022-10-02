@@ -6,23 +6,18 @@
 :root {
     --font-family: Comfortaa, Sans-serif;
 
-    --text-size-mobile: 10px;
-    --letter-spacing-mobile: 0.14em;
-
+    --text-title: 18px;
+    --line-height-title: 1.7;
+    --letter-spacing-title: 0.06em;
 
     --text-size: 12px;
     --line-height: 2;
     --letter-spacing: 0.24em;
 
-    --text-content: 14px;
-    --line-height-content: 1.7;
-    --letter-spacing-content: 0.06em;
-
+    //TabletDesktop
     --text-title-tablet: 20px;
-
-    --text-title-desktop: 20px;
-    --line-height-desktop: 1.2;
-    --letter-spacing-desktop: 0.06em;
+    --line-height-title-tablet: 1.7;
+    --letter-spacing-title-tablet: 0.12em;
 
     --color-text: #43291b;
     --color-text-invert: #fff;
@@ -45,7 +40,7 @@ body {
 
     text-transform: var(--text-transform);
 
-    // &.no-scroll {
-    //     overflow: hidden;
-    // }
+    &.no-scroll {
+        overflow: hidden;
+    }
 }

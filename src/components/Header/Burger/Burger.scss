@@ -1,7 +1,12 @@
+@use '../../../styles/mixins';
+
 .hamburger-menu_nav {
     position: fixed;
-    top: 84px;
-    left: -105%;
+    top: 44px;
+    left: 0px;
+    transform: translateX(-100%);
+
+    padding: 40px 20px;
 
     height: 100%;
     width: 100vw;
@@ -11,8 +16,9 @@
     display: flex;
     flex-direction: column;
 
-    font-size: 12px;
-    letter-spacing: var(--letter-spacing-mobile);
+    font-size: var(--text-size);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
 
     background-color: var(--color-bg);
     overflow-y: scroll;
@@ -20,7 +26,7 @@
 }
 
 .is-active .hamburger-menu_nav {
-    left: 0;
+    transform: none;
     transition: 0.4s;
 }
 
@@ -41,4 +47,31 @@
 
 .hamburger-menu_mobile address {
     margin-bottom: 10px;
+}
+
+.hamburger-menu_item {
+    position: relative;
+    
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 0%;
+            background-color: currentColor;
+            height: 1px;
+            bottom: -6px;
+            transition: width 0.2s;
+            pointer-events: none;
+        }
+    
+        &:hover:after,
+        :focus:after {
+            width: 100%;
+            color: var(--text-color);
+        }
+}
+
+.hamburger-address_item {
+    font-size: 10px;
 }
