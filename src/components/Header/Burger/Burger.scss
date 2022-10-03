@@ -2,7 +2,7 @@
 
 .hamburger-menu_nav {
     position: fixed;
-    top: 64px;
+    top: 60px;
     left: 0px;
     transform: translateX(-100%);
 
@@ -23,6 +23,10 @@
     background-color: var(--color-bg);
     overflow-y: auto;
     transition: 0.8s;
+
+    @include mixins.mq(tablet) {
+        top: 60px;
+    }
 }
 
 .is-active .hamburger-menu_nav {
@@ -73,5 +77,7 @@
 }
 
 .hamburger-address_item {
-    font-size: 10px;
+    font-family: var(--font-family-light);
+    font-size: var(--text-size);
+    font-weight: 300;
 }

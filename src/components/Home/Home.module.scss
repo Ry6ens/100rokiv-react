@@ -2,13 +2,14 @@
 
 .sectionTitle {
     margin-bottom: 50px;
+
+    padding: 0px 20px;
 }
 
 .title {
     margin-bottom: 25px;
 
     font-size: var(--text-title);
-    font-weight: 500;
     line-height: var(--line-height-title);
     letter-spacing: var(--letter-spacing-title);
 
@@ -23,7 +24,8 @@
 }
 
 .text {
-    font-size: var(--text-size-mobile);
+    font-size: var(--font-family-light);
+    font-weight: 300;
     line-height: var(--line-height);
     letter-spacing: var(--letter-spacing);
 
@@ -66,7 +68,6 @@
     padding-bottom: 28px;
 
     font-size: var(--text-size);
-    font-weight: 700;
     line-height: var(--line-height);
     letter-spacing: var(--letter-spacing);
     text-align: center;
@@ -76,4 +77,5 @@
 
 .sectionFloors {
     margin-bottom: 50px;
+    padding: 0px 20px;
 }
