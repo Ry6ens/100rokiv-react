@@ -1,0 +1,35 @@
+@use '../../styles/mixins';
+
+.sectionMenu {
+    padding: 30px 20px;
+
+    background: linear-gradient(to bottom, var(--color-bg-panel), var(--color-bg));
+
+    @include mixins.mq(desktop) {
+        padding: 90px 20px;
+    }
+}
+
+.title {
+    margin-bottom: 25px;
+
+    font-size: var(--text-title);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+
+    text-align: center;
+}
+
+.galleryMenuList {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    @include mixins.mq(desktop) {
+        flex-direction: row;
+    }
+}
+
+.imgMenu {
+    width: 100%;
+}
