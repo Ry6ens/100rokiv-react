@@ -15,6 +15,7 @@ export default function Modal({ onClose, children }) {
       onClose(false);
       document.removeEventListener("keydown", closeModal);
       document.body.classList.remove("no-scroll");
+      document.body.style.overflow = "auto";
     }
   };
 

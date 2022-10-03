@@ -11,6 +11,8 @@ export default function Gallery() {
 
   const handleClickModal = (e) => {
     document.body.classList.add("no-scroll");
+    document.body.style.overflow = "hidden";
+
     setShowModal(e.target.dataset.image);
   };
 
