@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/307.168f3e88.chunk.js","mappings":"iLAAe,SAASA,IACtB,OAAO,uBACR,C","sources":["pages/FoundersPage/FoundersPage.jsx"],"sourcesContent":["export default function FoundersPage() {\n  return <></>;\n}\n"],"names":["FoundersPage"],"sourceRoot":""}

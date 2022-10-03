@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/56.bff7a0ee.chunk.js","mappings":"8KAAe,SAASA,IACtB,OAAO,uBACR,C","sources":["pages/AbovePage/AbovePage.jsx"],"sourcesContent":["export default function AbovePage() {\n  return <></>;\n}\n"],"names":["AbovePage"],"sourceRoot":""}
