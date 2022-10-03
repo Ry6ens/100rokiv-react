@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/100rokiv-react/static/css/main.74ecf5d7.css",
-    "main.js": "/100rokiv-react/static/js/main.6c58bd43.js",
-    "static/css/700.be874251.chunk.css": "/100rokiv-react/static/css/700.be874251.chunk.css",
+    "main.css": "/100rokiv-react/static/css/main.99a33bec.css",
+    "main.js": "/100rokiv-react/static/js/main.e259462d.js",
+    "static/css/700.d96821c7.chunk.css": "/100rokiv-react/static/css/700.d96821c7.chunk.css",
     "static/js/700.0a0b2c2c.chunk.js": "/100rokiv-react/static/js/700.0a0b2c2c.chunk.js",
     "static/js/992.570622e0.chunk.js": "/100rokiv-react/static/js/992.570622e0.chunk.js",
     "static/js/202.efa1f263.chunk.js": "/100rokiv-react/static/js/202.efa1f263.chunk.js",
@@ -44,9 +44,9 @@
     "static/media/instagram.svg": "/100rokiv-react/static/media/instagram.bb9ea0f45adbb6c08cfd1626295c7c72.svg",
     "index.html": "/100rokiv-react/index.html",
     "static/media/facebook.svg": "/100rokiv-react/static/media/facebook.752525714e58488662ce0985f0159f6c.svg",
-    "main.74ecf5d7.css.map": "/100rokiv-react/static/css/main.74ecf5d7.css.map",
-    "main.6c58bd43.js.map": "/100rokiv-react/static/js/main.6c58bd43.js.map",
-    "700.be874251.chunk.css.map": "/100rokiv-react/static/css/700.be874251.chunk.css.map",
+    "main.99a33bec.css.map": "/100rokiv-react/static/css/main.99a33bec.css.map",
+    "main.e259462d.js.map": "/100rokiv-react/static/js/main.e259462d.js.map",
+    "700.d96821c7.chunk.css.map": "/100rokiv-react/static/css/700.d96821c7.chunk.css.map",
     "700.0a0b2c2c.chunk.js.map": "/100rokiv-react/static/js/700.0a0b2c2c.chunk.js.map",
     "992.570622e0.chunk.js.map": "/100rokiv-react/static/js/992.570622e0.chunk.js.map",
     "202.efa1f263.chunk.js.map": "/100rokiv-react/static/js/202.efa1f263.chunk.js.map",
@@ -64,7 +64,7 @@
     "386.d37cdbca.chunk.js.map": "/100rokiv-react/static/js/386.d37cdbca.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.74ecf5d7.css",
-    "static/js/main.6c58bd43.js"
+    "static/css/main.99a33bec.css",
+    "static/js/main.e259462d.js"
   ]
 }
