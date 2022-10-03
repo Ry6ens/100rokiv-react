@@ -83,3 +83,14 @@ tomatoMelon {
         background-image: url('../../images/menu/kachana.jpg');
     }
 }
+
+.modalImg {
+    position: absolute;
+        display: block;
+        height: calc(100% - 50px);
+        width: calc(100% - 200px);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: contain;
+}
