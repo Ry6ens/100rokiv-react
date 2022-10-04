@@ -32,7 +32,7 @@ export default function Header() {
           </a>
         )}
 
-        <Link to="" className={s.btnBook}>
+        <Link to="/book" className={s.btnBook}>
           Бронювання
         </Link>
       </div>

@@ -7,8 +7,6 @@ import Navigation from "../../components/Navigation/Navigation";
 import Gallery from "../../components/Gallery/Gallery";
 import Menu from "../../components/Menu/Menu";
 
-// import s from "./GroundPage.module.scss";
-
 export default function GroundPage() {
   const isDesktop = useMediaQuery({ minWidth: 1024 });
 

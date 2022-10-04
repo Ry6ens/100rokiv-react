@@ -8,8 +8,6 @@ import Navigation from "../../components/Navigation/Navigation";
 import Gallery from "../../components/Gallery/Gallery";
 import Menu from "../../components/Menu/Menu";
 
-// import s from "./AbovePage.module.scss";
-
 export default function AbovePage() {
   const isDesktop = useMediaQuery({ minWidth: 1024 });
 

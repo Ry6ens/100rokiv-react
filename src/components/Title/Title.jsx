@@ -8,6 +8,7 @@ export default function Title({
   textParag1,
   textParag2,
   textParag3,
+  btnBook = true,
 }) {
   return (
     <section className={s.sectionTitle}>
@@ -21,24 +22,13 @@ export default function Title({
         <p className={s.text}>{textParag1}</p>
         <p className={s.text}>{textParag2}</p>
         <p className={s.text}>{textParag3}</p>
-        {/* <p className={s.text}>
-          Входячи, ви потрапляєте до затишної, оздобленої натуральним деревом
-          зали.
-        </p>
-        <p className={s.text}>
-          Це найкраще місце для того, щоб насолодитися смаком України у великій
-          компанії - друзів, родини або просто знайомих.
-        </p>
-        <p className={s.text}>
-          Тут, до речі, знаходиться наш бар, де народжуються авторські коктейлі
-          - унікальні напої з місцевих інгредієнтів. Уявіть, як це чудово -
-          спостерігати за тим, як створюється саме ваш!
-        </p> */}
-        <div className={s.btnLink}>
-          <Link to="/book" className={s.btnBook}>
-            Забронювати столик
-          </Link>
-        </div>
+        {btnBook && (
+          <div className={s.btnLink}>
+            <Link to="/book" className={s.btnBook}>
+              Забронювати столик
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );
