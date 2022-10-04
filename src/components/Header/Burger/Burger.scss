@@ -78,6 +78,10 @@
 
 .hamburger-address_item {
     font-family: var(--font-family-light);
-    font-size: var(--text-size);
+    font-size: 10px;
     font-weight: 300;
+
+    @include mixins.mq(tablet) {
+        font-size: var(--text-size);
+    }
 }

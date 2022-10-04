@@ -43,9 +43,13 @@
 .text {
     font-family: var(--font-family-light);
     font-weight: 300;
-    font-size: var(--text-size);
+    font-size: 10px;
     line-height: var(--line-height);
     letter-spacing: 0.14em;
+
+    @include mixins.mq(tablet) {
+        font-size: var(--text-size);
+    }
 }
 
 .social {
