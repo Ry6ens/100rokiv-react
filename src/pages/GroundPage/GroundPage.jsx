@@ -16,7 +16,7 @@ export default function GroundPage() {
     <main>
       <section className={s.sectionTitle}>
         <img
-          class={s.img}
+          className={s.img}
           src={Ground}
           alt="100 років тому вперед Перший поверх"
         />
