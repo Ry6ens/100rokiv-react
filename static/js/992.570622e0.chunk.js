@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunk_100rokiv_react=self.webpackChunk_100rokiv_react||[]).push([[992],{3992:function(r,e,n){n.r(e),n.d(e,{default:function(){return u}});var t=n(184);function u(){return(0,t.jsx)(t.Fragment,{})}}}]);
-//# sourceMappingURL=992.570622e0.chunk.js.map

@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/100rokiv-react/static/css/main.ee2f10e7.css",
-    "main.js": "/100rokiv-react/static/js/main.11084468.js",
+    "main.js": "/100rokiv-react/static/js/main.ee4a7d89.js",
     "static/css/263.ecfbfc7f.chunk.css": "/100rokiv-react/static/css/263.ecfbfc7f.chunk.css",
     "static/js/263.67f2c05f.chunk.js": "/100rokiv-react/static/js/263.67f2c05f.chunk.js",
-    "static/js/992.570622e0.chunk.js": "/100rokiv-react/static/js/992.570622e0.chunk.js",
+    "static/css/726.8b47b3bf.chunk.css": "/100rokiv-react/static/css/726.8b47b3bf.chunk.css",
+    "static/js/726.2389e6b1.chunk.js": "/100rokiv-react/static/js/726.2389e6b1.chunk.js",
     "static/js/202.efa1f263.chunk.js": "/100rokiv-react/static/js/202.efa1f263.chunk.js",
     "static/js/83.1a7b48bb.chunk.js": "/100rokiv-react/static/js/83.1a7b48bb.chunk.js",
     "static/js/581.514767dd.chunk.js": "/100rokiv-react/static/js/581.514767dd.chunk.js",
@@ -15,16 +16,17 @@
     "static/js/250.3a7d94a5.chunk.js": "/100rokiv-react/static/js/250.3a7d94a5.chunk.js",
     "static/js/93.051ef956.chunk.js": "/100rokiv-react/static/js/93.051ef956.chunk.js",
     "static/css/624.da77d527.chunk.css": "/100rokiv-react/static/css/624.da77d527.chunk.css",
-    "static/js/624.3cf6793e.chunk.js": "/100rokiv-react/static/js/624.3cf6793e.chunk.js",
+    "static/js/624.38335a39.chunk.js": "/100rokiv-react/static/js/624.38335a39.chunk.js",
     "static/css/889.da77d527.chunk.css": "/100rokiv-react/static/css/889.da77d527.chunk.css",
-    "static/js/889.99d7f79b.chunk.js": "/100rokiv-react/static/js/889.99d7f79b.chunk.js",
+    "static/js/889.fe8e70ff.chunk.js": "/100rokiv-react/static/js/889.fe8e70ff.chunk.js",
     "static/css/831.da77d527.chunk.css": "/100rokiv-react/static/css/831.da77d527.chunk.css",
-    "static/js/831.b7d36fa3.chunk.js": "/100rokiv-react/static/js/831.b7d36fa3.chunk.js",
+    "static/js/831.8cb8cc5d.chunk.js": "/100rokiv-react/static/js/831.8cb8cc5d.chunk.js",
     "static/media/cukini.jpg": "/100rokiv-react/static/media/cukini.b87390e2f45de027e87a.jpg",
     "static/media/buriak.jpg": "/100rokiv-react/static/media/buriak.3dc5dad6bd6e368652c7.jpg",
     "static/media/menu-bar.jpg": "/100rokiv-react/static/media/menu-bar.02dd527f9d80d7dc8483.jpg",
     "static/media/indichka.jpg": "/100rokiv-react/static/media/indichka.5c42d81e1aed479bfbd2.jpg",
     "static/media/knish.jpg": "/100rokiv-react/static/media/knish.47a19a96427b0ceb28df.jpg",
+    "static/media/book.jpg": "/100rokiv-react/static/media/book.f60ff769234bebe25db2.jpg",
     "static/media/menu-wine.jpg": "/100rokiv-react/static/media/menu-wine.317d868570ae8bbc78de.jpg",
     "static/media/menu-food.jpg": "/100rokiv-react/static/media/menu-food.58adf538a197f23d93db.jpg",
     "static/media/kulish.jpg": "/100rokiv-react/static/media/kulish.0ecbc537522e273a72a8.jpg",
@@ -47,10 +49,11 @@
     "index.html": "/100rokiv-react/index.html",
     "static/media/facebook.svg": "/100rokiv-react/static/media/facebook.752525714e58488662ce0985f0159f6c.svg",
     "main.ee2f10e7.css.map": "/100rokiv-react/static/css/main.ee2f10e7.css.map",
-    "main.11084468.js.map": "/100rokiv-react/static/js/main.11084468.js.map",
+    "main.ee4a7d89.js.map": "/100rokiv-react/static/js/main.ee4a7d89.js.map",
     "263.ecfbfc7f.chunk.css.map": "/100rokiv-react/static/css/263.ecfbfc7f.chunk.css.map",
     "263.67f2c05f.chunk.js.map": "/100rokiv-react/static/js/263.67f2c05f.chunk.js.map",
-    "992.570622e0.chunk.js.map": "/100rokiv-react/static/js/992.570622e0.chunk.js.map",
+    "726.8b47b3bf.chunk.css.map": "/100rokiv-react/static/css/726.8b47b3bf.chunk.css.map",
+    "726.2389e6b1.chunk.js.map": "/100rokiv-react/static/js/726.2389e6b1.chunk.js.map",
     "202.efa1f263.chunk.js.map": "/100rokiv-react/static/js/202.efa1f263.chunk.js.map",
     "83.1a7b48bb.chunk.js.map": "/100rokiv-react/static/js/83.1a7b48bb.chunk.js.map",
     "581.514767dd.chunk.js.map": "/100rokiv-react/static/js/581.514767dd.chunk.js.map",
@@ -61,14 +64,14 @@
     "250.3a7d94a5.chunk.js.map": "/100rokiv-react/static/js/250.3a7d94a5.chunk.js.map",
     "93.051ef956.chunk.js.map": "/100rokiv-react/static/js/93.051ef956.chunk.js.map",
     "624.da77d527.chunk.css.map": "/100rokiv-react/static/css/624.da77d527.chunk.css.map",
-    "624.3cf6793e.chunk.js.map": "/100rokiv-react/static/js/624.3cf6793e.chunk.js.map",
+    "624.38335a39.chunk.js.map": "/100rokiv-react/static/js/624.38335a39.chunk.js.map",
     "889.da77d527.chunk.css.map": "/100rokiv-react/static/css/889.da77d527.chunk.css.map",
-    "889.99d7f79b.chunk.js.map": "/100rokiv-react/static/js/889.99d7f79b.chunk.js.map",
+    "889.fe8e70ff.chunk.js.map": "/100rokiv-react/static/js/889.fe8e70ff.chunk.js.map",
     "831.da77d527.chunk.css.map": "/100rokiv-react/static/css/831.da77d527.chunk.css.map",
-    "831.b7d36fa3.chunk.js.map": "/100rokiv-react/static/js/831.b7d36fa3.chunk.js.map"
+    "831.8cb8cc5d.chunk.js.map": "/100rokiv-react/static/js/831.8cb8cc5d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ee2f10e7.css",
-    "static/js/main.11084468.js"
+    "static/js/main.ee4a7d89.js"
   ]
 }

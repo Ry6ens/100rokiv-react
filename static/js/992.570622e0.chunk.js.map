@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/992.570622e0.chunk.js","mappings":"iLAAe,SAASA,IACtB,OAAO,uBACR,C","sources":["pages/BookPage/BookPage.jsx"],"sourcesContent":["export default function BookPage() {\n  return <></>;\n}\n"],"names":["BookPage"],"sourceRoot":""}
