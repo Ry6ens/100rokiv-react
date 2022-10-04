@@ -11,7 +11,13 @@ const getClassName = ({ isActive }) => {
 export default function Navigation({ navClass }) {
   const elements = items.map(({ id, to, text }) => (
     <li key={id}>
-      <NavLink to={to} className={getClassName}>
+      <NavLink
+        to={to}
+        className={getClassName}
+        onClick={() => {
+          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        }}
+      >
         {text}
       </NavLink>
     </li>

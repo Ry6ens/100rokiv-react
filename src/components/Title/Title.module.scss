@@ -9,13 +9,12 @@
 }
 
 .container {
+    margin-top: 40px;
     padding: 0px 20px;
 }
 
 .img {
     width: 100%;
-
-    margin-bottom: 40px;
 }
 
 .title {
@@ -36,6 +35,22 @@
     letter-spacing: var(--letter-spacing);
 
     text-align: center;
+}
+
+.textFounders {
+    margin-top: 25px;
+    
+        font-family: var(--font-family-light);
+        font-size: 10px;
+        font-weight: 300;
+        line-height: var(--line-height);
+        letter-spacing: var(--letter-spacing);
+    
+        text-align: center;
+
+        @include mixins.mq(tablet) {
+                font-size: var(--text-size);
+            }
 }
 
 .btnLink {
