@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/827.8e87d959.chunk.js","mappings":"iLAAe,SAASA,IACtB,OAAO,uBACR,C","sources":["pages/WhatsOnPage/WhatsOnPage.jsx"],"sourcesContent":["export default function WhatsOnPage() {\n  return <></>;\n}\n"],"names":["WhatsOnPage"],"sourceRoot":""}
