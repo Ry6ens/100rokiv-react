@@ -1,34 +1,12 @@
 @use '../../styles/mixins';
 
-.sectionTitle {
-    margin-bottom: 30px;
-
-    @include mixins.mq(desktop) {
-        margin-bottom: 90px;
-    }
-}
-
-.container {
-    margin-top: 40px;
+.section {
     padding: 0px 20px;
 }
 
-.img {
-    width: 100%;
-}
-
-.imgFounders {
-    width: 100%;
-
-    @include mixins.mq(desktop) {
-        display: flex;
-        height: 520px;
-        width: auto;
-        margin: 0 auto;
-    }
-}
-
 .title {
+    margin-bottom: 25px;
+
     font-size: var(--text-title);
     line-height: var(--line-height);
     letter-spacing: var(--letter-spacing);
@@ -37,7 +15,7 @@
 }
 
 .text {
-    margin-top: 25px;
+    margin-bottom: 25px;
 
     font-family: var(--font-family-light);
     font-size: var(--text-size);
@@ -48,30 +26,13 @@
     text-align: center;
 }
 
-.textFounders {
-    margin-top: 25px;
-
-    font-family: var(--font-family-light);
-    font-size: 10px;
-    font-weight: 300;
-    line-height: var(--line-height);
-    letter-spacing: var(--letter-spacing);
-
-    text-align: center;
-
-    @include mixins.mq(tablet) {
-        font-size: var(--text-size);
-    }
-
-    @include mixins.mq(desktop) {
-        max-width: 700px;
-        margin: 0 auto;
-        padding-top: 25px;
-    }
+.img {
+    width: 100%;
 }
 
 .btnLink {
     margin-top: 25px;
+    margin-bottom: 30px;
 
     text-align: center;
 

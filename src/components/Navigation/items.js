@@ -41,10 +41,4 @@ export const items = [
     text: "Засновники",
     private: false,
   },
-  {
-    id: "8",
-    to: "/contact-us",
-    text: "Наші контакти",
-    private: false,
-  },
 ];

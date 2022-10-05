@@ -3,18 +3,6 @@ import { Routes, Route } from "react-router-dom";
 
 import Loader from "../Loader/Loader";
 
-// import HomePage from "../../pages/HomePage";
-// import BookPage from "../../pages/BookPage";
-// import MenuPage from "../../pages/MenuPage";
-// import DeliveryPage from "../../pages/DeliveryPage";
-// import GiftVouchersPage from "../../pages/GiftVouchersPage";
-// import WhatsOnPage from "../../pages/WhatsOnPage";
-// import FoundersPage from "../../pages/FoundersPage";
-// import ContactUsPage from "../../pages/ContactUsPage";
-// import PrivacyPolicyPage from "../../pages/PrivacyPolicyPage";
-// import PublicOfferPage from "../../pages/PublicOfferPage";
-// import NotFoundPage from "../../pages/NotFoundPage";
-
 const HomePage = lazy(() => import("../../pages/HomePage"));
 const BookPage = lazy(() => import("../../pages/BookPage"));
 const MenuPage = lazy(() => import("../../pages/MenuPage"));
@@ -22,7 +10,6 @@ const DeliveryPage = lazy(() => import("../../pages/DeliveryPage"));
 const GiftVouchersPage = lazy(() => import("../../pages/GiftVouchersPage"));
 const WhatsOnPage = lazy(() => import("../../pages/WhatsOnPage"));
 const FoundersPage = lazy(() => import("../../pages/FoundersPage"));
-const ContactUsPage = lazy(() => import("../../pages/ContactUsPage"));
 const PrivacyPolicyPage = lazy(() => import("../../pages/PrivacyPolicyPage"));
 const PublicOfferPage = lazy(() => import("../../pages/PublicOfferPage"));
 const NotFoundPage = lazy(() => import("../../pages/NotFoundPage"));
@@ -41,7 +28,6 @@ export default function UserRoutes() {
         <Route path="/gift-vouchers" element={<GiftVouchersPage />} />
         <Route path="/whats-on" element={<WhatsOnPage />} />
         <Route path="/founders" element={<FoundersPage />} />
-        <Route path="/contact-us" element={<ContactUsPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="/public-offer" element={<PublicOfferPage />} />
         <Route path="/ground" element={<GroundPage />} />

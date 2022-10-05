@@ -15,6 +15,7 @@ export default function FoundersPage() {
     <section className={s.section}>
       <Title
         img={KlopotenkoIMG}
+        imgClass="imgFounders"
         title="Євген Клопотенко"
         textClass="textFounders"
         textParag1="Ідея «100 років тому вперед» виникла задовго до відкриття ресторану.
@@ -26,6 +27,7 @@ export default function FoundersPage() {
       />
       <Title
         img={PopereshnukIMG}
+        imgClass="imgFounders"
         title="Інна Поперешнюк"
         textClass="textFounders"
         textParag1="100 років тому вперед — це команда сміливців, яка взяла на себе відповідальність показати гастрономічну Україну іншою і ще жодного разу не схибила у заданому векторі."
