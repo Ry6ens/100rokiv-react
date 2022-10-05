@@ -1,20 +1,31 @@
 import { useMediaQuery } from "react-responsive";
 import { useForm, Controller } from "react-hook-form";
 import ReactSelect from "react-select";
-// import "react-phone-number-input/style.css";
-import "./styles.css";
-import PhoneInput from "react-phone-number-input";
+import PhoneInput, { isPossiblePhoneNumber } from "react-phone-number-input";
 import { ErrorMessage } from "@hookform/error-message";
+import { useDispatch } from "react-redux";
 
 import Title from "../../components/Title/Title";
 import Navigation from "../../components/Navigation/Navigation";
+import { getGoogleSheetOperations } from "../../redux/googleAuth-operations";
+
+import { ReactComponent as Warning } from "../../images/svg/warning.svg";
 
 import s from "./GiftVouchersPage.module.scss";
+import "./styles.css";
 
 export default function GiftVouchersPage() {
+  const dispatch = useDispatch();
+
   const isDesktop = useMediaQuery({ minWidth: 1024 });
 
-  const { control, register, handleSubmit, reset, errors } = useForm({
+  const {
+    control,
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm({
     defaultValues: {
       name: "",
       tel: "",
@@ -25,6 +36,7 @@ export default function GiftVouchersPage() {
   const onSubmit = (data, e) => {
     e.preventDefault();
     console.log(data);
+    dispatch(getGoogleSheetOperations(data));
     reset();
   };
 
@@ -42,7 +54,7 @@ export default function GiftVouchersPage() {
       />
       <form className={s.form} onSubmit={handleSubmit(onSubmit)}>
         <Controller
-          name="Sum"
+          name="sum"
           control={control}
           rules={{ required: "Обов'язкове поле" }}
           render={({ field }) => (
@@ -62,7 +74,7 @@ export default function GiftVouchersPage() {
         />
         <ErrorMessage
           errors={errors}
-          name="query"
+          name="sum"
           render={({ message }) => (
             <div className={s.errorOverlay}>
               <Warning />
@@ -70,19 +82,34 @@ export default function GiftVouchersPage() {
             </div>
           )}
         />
+
         <label htmlFor="">
           <input
             className={s.input}
             {...register("name", {
-              pattern: /[A-Za-z]/,
               required: "Обов'язкове поле",
+              pattern: {
+                value: /[a-z]/gi,
+                message: "Обов'язкове поле",
+              },
             })}
             type="text"
             placeholder="Ім‘я та прізвище того, хто дарує"
-            // pattern="/[А-Я][а-яєі]+/g"
-            pattern="/[^A-Za-z]+/g"
+            // pattern="[бвгґджзклмнпрстфхцчшщйаеєиіїоуюяь]"
+            // title="4 to 8 lowercase letters"
           />
         </label>
+        <ErrorMessage
+          errors={errors}
+          name="name"
+          render={({ message }) => (
+            <div className={s.errorOverlay}>
+              <Warning />
+              <p className={s.errorMessage}>{message}</p>
+            </div>
+          )}
+        />
+
         <Controller
           control={control}
           name="tel"
@@ -97,9 +124,21 @@ export default function GiftVouchersPage() {
               onChange={onChange}
               defaultCountry="UA"
               international
+              error={value && isPossiblePhoneNumber(value) ? "true" : "false"}
             />
           )}
         />
+        <ErrorMessage
+          errors={errors}
+          name="tel"
+          render={({ message }) => (
+            <div className={s.errorOverlay}>
+              <Warning />
+              <p className={s.errorMessage}>{message}</p>
+            </div>
+          )}
+        />
+
         <button className={s.btn} type="submit">
           Подарувати
         </button>

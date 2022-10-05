@@ -43,6 +43,15 @@
     box-shadow: 0 1px 2px rgb(0 0 0 / 0%);
 }
 
-.PhoneInputInput {
-    border: none
+.errorOverlay {
+    display: flex;
+    align-items: center;
+}
+
+.errorMessage {
+    margin-left: 10px;
+
+    font-size: 10px;
+
+    color: #f84147;
 }
