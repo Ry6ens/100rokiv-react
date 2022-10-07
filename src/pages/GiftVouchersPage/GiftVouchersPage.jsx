@@ -3,9 +3,12 @@ import { useForm, Controller } from "react-hook-form";
 import ReactSelect from "react-select";
 import PhoneInput, { isPossiblePhoneNumber } from "react-phone-number-input";
 import { ErrorMessage } from "@hookform/error-message";
+import { useDispatch } from "react-redux";
+import moment from "moment";
 
 import Title from "../../components/Title/Title";
 import Navigation from "../../components/Navigation/Navigation";
+import { getEmailOperations } from "../../redux/email/email-operations";
 
 import { ReactComponent as Warning } from "../../images/svg/warning.svg";
 
@@ -13,6 +16,7 @@ import s from "./GiftVouchersPage.module.scss";
 import "./styles.css";
 
 function GiftVouchersPage() {
+  const dispatch = useDispatch();
   const isDesktop = useMediaQuery({ minWidth: 1024 });
 
   const {
@@ -31,16 +35,19 @@ function GiftVouchersPage() {
 
   const onSubmit = (data, e) => {
     e.preventDefault();
-    fetch(
-      `https://script.google.com/macros/s/AKfycbzA3WbJybNVVOZmab4kafXd-P0Nr74XhK70-teC5pMoVCVNtjxYZuNa7U1ASM6AHnKG/exec?name=${data.name}&tel=${data.tel}&sum=${data.sum.value}`,
-      {
-        method: "POST",
-        // body: JSON.stringify(newData),
-        // body: data,
-      }
-    )
-      .then((result) => result)
-      .catch((error) => console.log("error", error));
+    const date = moment(new Date()).format("DD-MM-yyyy, HH:mm:ss");
+    // const newData = { ...data, date };
+    dispatch(getEmailOperations({ ...data, date }));
+    // fetch(
+    //   `https://script.google.com/macros/s/AKfycbzA3WbJybNVVOZmab4kafXd-P0Nr74XhK70-teC5pMoVCVNtjxYZuNa7U1ASM6AHnKG/exec?name=${data.name}&tel=${data.tel}&sum=${data.sum.value}`,
+    //   {
+    //     method: "POST",
+    //     // body: JSON.stringify(newData),
+    //     // body: data,
+    //   }
+    // )
+    //   .then((result) => result)
+    //   .catch((error) => console.log("error", error));
     reset();
   };
 
