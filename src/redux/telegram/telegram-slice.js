@@ -8,7 +8,7 @@ const initialState = {
   error: "",
 };
 
-const getSheetSlice = createSlice({
+const getTelegramSlice = createSlice({
   name: "telegram",
   initialState,
   extraReducers: {
@@ -27,4 +27,4 @@ const getSheetSlice = createSlice({
   },
 });
 
-export default getSheetSlice.reducer;
+export default getTelegramSlice.reducer;

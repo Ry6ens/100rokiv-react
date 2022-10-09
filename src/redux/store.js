@@ -10,9 +10,15 @@ import {
 } from "redux-persist";
 
 import getEmailSlice from "../redux/email/email-slice";
+import getSheetSlice from "../redux/google/sheet-slice";
+import getTelegramSlice from "../redux/telegram/telegram-slice";
 
 export const store = configureStore({
-  reducer: { email: getEmailSlice },
+  reducer: {
+    email: getEmailSlice,
+    google: getSheetSlice,
+    telegram: getTelegramSlice,
+  },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {

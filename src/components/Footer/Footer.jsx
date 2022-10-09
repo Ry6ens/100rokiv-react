@@ -13,7 +13,7 @@ export default function Footer() {
         <p className={s.title}>Графік роботи:</p>
         <div className={s.schedule}>
           <p className={s.text}>понеділок - пʼятниця: 12:00 до 21:00</p>
-          <p className={s.text}>субота - неділя: 09:00 до 21:00</p>
+          <p className={s.text}>субота - неділя: 10:00 до 21:00</p>
         </div>
       </div>
       <div className={s.footerBottom}>

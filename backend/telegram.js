@@ -14,7 +14,7 @@ const appendTelegram = (message) => {
     chat_id: TELEGRAM_CHAT_ID,
     parse_mode: "html",
     text: `
-    <b style="color:red;">Подарунковий сертифікат</b>
+    <b>Подарунковий сертифікат</b>
 
     <b>Ім'я:</b> ${name}
     <b>Телефон:</b> ${tel}
