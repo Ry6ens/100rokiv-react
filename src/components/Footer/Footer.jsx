@@ -1,14 +1,19 @@
 import { useMediaQuery } from "react-responsive";
+import { Link } from "react-router-dom";
 
 import s from "./Footer.module.scss";
+import Navigation from "../Navigation/Navigation";
 import { ReactComponent as Facebook } from "../../images/svg/facebook.svg";
 import { ReactComponent as Instagram } from "../../images/svg/instagram.svg";
 
 export default function Footer() {
-  const isTablet = useMediaQuery({ minWidth: 768 });
+  // const isTablet = useMediaQuery({ minWidth: 768 });
+  const isDesktop = useMediaQuery({ minWidth: 1024 });
 
   return (
     <footer>
+      {isDesktop && <Navigation navClass="footer-navigation_desktop" />}
+
       <div className={s.logo}>
         <p className={s.title}>Графік роботи:</p>
         <div className={s.schedule}>
@@ -18,14 +23,38 @@ export default function Footer() {
       </div>
       <div className={s.footerBottom}>
         <p className={s.titleBottom}>© 100 років тому вперед</p>
-        {isTablet && (
+        {isDesktop && (
           <div className={s.social}>
+            <Link
+              to="/privacy-policy"
+              className={s.link}
+              onClick={() => {
+                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              }}
+            >
+              Політика конфіденційності
+            </Link>
+            <Link
+              to="/public-offer"
+              className={s.link}
+              onClick={() => {
+                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              }}
+            >
+              Публічна оферта
+            </Link>
             <a
               href="https://www.facebook.com/100rokivtomuvpered"
               rel="noreferrer"
               target="_blank"
             >
-              <Facebook width="30" height="30" />
+              <Facebook
+                width="30"
+                height="30"
+                onClick={() => {
+                  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                }}
+              />
             </a>
             <a
               href="https://www.instagram.com/100rokivtomuvpered"

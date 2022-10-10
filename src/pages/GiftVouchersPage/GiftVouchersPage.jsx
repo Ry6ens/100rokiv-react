@@ -1,25 +1,22 @@
-import { useMediaQuery } from "react-responsive";
 import { useSelector } from "react-redux";
 
 import Title from "../../components/Title/Title";
-import Navigation from "../../components/Navigation/Navigation";
 import GiftVouchersForm from "../../components/GiftVouchersForm/GiftVouchersForm";
 import Loader from "../../components/Loader/Loader";
 
 import { getEmailLoading } from "../../redux/email/email-selectors";
 
 // import s from "./GiftVouchersPage.module.scss";
-import "./styles.css";
+import "./styles.scss";
 
 function GiftVouchersPage() {
-  const isDesktop = useMediaQuery({ minWidth: 1024 });
-
   const emailLoading = useSelector(getEmailLoading);
 
   return (
     <main>
       <Title
         // img={KlopotenkoIMG}
+        containerClass="containerGiftVoucher"
         imgClass="none"
         title="Сертифікат"
         textClass="textFounders"
@@ -29,8 +26,6 @@ function GiftVouchersPage() {
         btnBook={false}
       />
       {emailLoading === true ? <Loader /> : <GiftVouchersForm />}
-
-      {isDesktop && <Navigation navClass="footer-navigation_desktop" />}
     </main>
   );
 }

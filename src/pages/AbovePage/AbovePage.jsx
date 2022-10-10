@@ -1,16 +1,11 @@
-import { useMediaQuery } from "react-responsive";
-
 import AboveIMG from "../../images/above.jpeg";
 
 import Title from "../../components/Title/Title";
 
-import Navigation from "../../components/Navigation/Navigation";
 import Gallery from "../../components/Gallery/Gallery";
 import Menu from "../../components/Menu/Menu";
 
 export default function AbovePage() {
-  const isDesktop = useMediaQuery({ minWidth: 1024 });
-
   return (
     <main>
       <Title
@@ -24,7 +19,6 @@ export default function AbovePage() {
       />
       <Menu />
       <Gallery />
-      {isDesktop && <Navigation navClass="footer-navigation_desktop" />}
     </main>
   );
 }

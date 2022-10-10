@@ -1,7 +1,4 @@
-import { useMediaQuery } from "react-responsive";
-
 import Title from "../../components/Title/Title";
-import Navigation from "../../components/Navigation/Navigation";
 
 import KlopotenkoIMG from "../../images/people/klopotenko.jpg";
 import PopereshnukIMG from "../../images/people/popereshnuk.jpg";
@@ -9,8 +6,6 @@ import PopereshnukIMG from "../../images/people/popereshnuk.jpg";
 import s from "./FoundersPage.module.scss";
 
 export default function FoundersPage() {
-  const isDesktop = useMediaQuery({ minWidth: 1024 });
-
   return (
     <section className={s.section}>
       <Title
@@ -36,7 +31,6 @@ export default function FoundersPage() {
         textParag4="З любов'ю і без стереотипів."
         btnBook={false}
       />
-      {isDesktop && <Navigation navClass="footer-navigation_desktop" />}
     </section>
   );
 }

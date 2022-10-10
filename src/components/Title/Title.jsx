@@ -12,11 +12,12 @@ export default function Title({
   btnBook = true,
   textClass = "text",
   imgClass = "img",
+  containerClass = "container",
 }) {
   return (
     <section className={s.sectionTitle}>
       <img className={s[imgClass]} src={img} alt={title} />
-      <div className={s.container}>
+      <div className={s[containerClass]}>
         <h1 className={s.title}>{title}</h1>
         <p className={s[textClass]}>{textParag1}</p>
         <p className={s[textClass]}>{textParag2}</p>

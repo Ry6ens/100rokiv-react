@@ -1,15 +1,10 @@
-import { useMediaQuery } from "react-responsive";
-
 import GroundIMG from "../../images/ground.jpeg";
 
 import Title from "../../components/Title/Title";
-import Navigation from "../../components/Navigation/Navigation";
 import Gallery from "../../components/Gallery/Gallery";
 import Menu from "../../components/Menu/Menu";
 
 export default function GroundPage() {
-  const isDesktop = useMediaQuery({ minWidth: 1024 });
-
   return (
     <main>
       <Title
@@ -23,7 +18,6 @@ export default function GroundPage() {
       />
       <Menu />
       <Gallery />
-      {isDesktop && <Navigation navClass="footer-navigation_desktop" />}
     </main>
   );
 }

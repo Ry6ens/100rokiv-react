@@ -32,6 +32,8 @@
 .select {
     font-size: 16px;
     text-transform: initial;
+
+    background-color: var(--color-bg);
 }
 
 .input {
@@ -51,15 +53,29 @@
 
     border: none;
     border-bottom: 1px solid hsl(0, 0%, 80%);
+
+    @include mixins.mq(tablet) {
+        height: 48px;
+    }
 }
 
 .btn {
     height: 38px;
 
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: var(--letter-spacing);
+    text-transform: var(--text-transform);
+
+
     background-color: #46B37A;
     color: #fff;
     border-color: transparent;
     box-shadow: 0 1px 2px rgb(0 0 0 / 0%);
+
+    @include mixins.mq(tablet) {
+        height: 48px;
+    }
 }
 
 .errorOverlay {
@@ -75,12 +91,16 @@
     color: #f84147;
 }
 
-.successbox {
-    width: 620px;
+.successBox {
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     background: rgb(242, 111, 111);
     color: #fff;
     padding: 20px;
     margin-bottom: 20px;
+
+    @include mixins.mq(tablet) {
+        width: 620px;
+    }
 }

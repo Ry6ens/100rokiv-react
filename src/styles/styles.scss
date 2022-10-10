@@ -47,6 +47,11 @@ body {
     }
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color var(--color-bg);
+}
+
 .root {
     display: flex;
     min-height: 100vh;

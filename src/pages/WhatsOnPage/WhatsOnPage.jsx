@@ -1,7 +1,4 @@
-import { useMediaQuery } from "react-responsive";
 // import { Link } from "react-router-dom";
-
-import Navigation from "../../components/Navigation/Navigation";
 
 import s from "./WhatsOnPage.module.scss";
 
@@ -11,7 +8,6 @@ import s from "./WhatsOnPage.module.scss";
 
 export default function WhatsOnPage() {
   // const isMobileTablet = useMediaQuery({ maxWidth: 1023.98 });
-  const isDesktop = useMediaQuery({ minWidth: 1024 });
 
   return (
     <section className={s.section}>
@@ -28,7 +24,6 @@ export default function WhatsOnPage() {
           Дізнатися більше
         </Link>
       </div> */}
-      {isDesktop && <Navigation navClass="footer-navigation_desktop" />}
     </section>
   );
 }

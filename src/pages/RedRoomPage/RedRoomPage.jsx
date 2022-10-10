@@ -1,16 +1,11 @@
-import { useMediaQuery } from "react-responsive";
-
 import RedRoomIMG from "../../images/redroom.jpeg";
 
 import Title from "../../components/Title/Title";
 
-import Navigation from "../../components/Navigation/Navigation";
 import Gallery from "../../components/Gallery/Gallery";
 import Menu from "../../components/Menu/Menu";
 
 export default function RedRoomPage() {
-  const isDesktop = useMediaQuery({ minWidth: 1024 });
-
   return (
     <main>
       <Title
@@ -22,7 +17,6 @@ export default function RedRoomPage() {
       />
       <Menu />
       <Gallery />
-      {isDesktop && <Navigation navClass="footer-navigation_desktop" />}
     </main>
   );
 }

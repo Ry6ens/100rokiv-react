@@ -54,12 +54,15 @@
 
 .social {
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
+.link {
+    color: var(--color-text-invert);
+}
+
 .logo {
-
-
     padding: 20px;
     text-align: center;
     border-top: 1px solid var(--color-bg-line);

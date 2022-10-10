@@ -5,6 +5,7 @@ import { items } from "./items";
 import s from "./Navigation.module.scss";
 
 const getClassName = ({ isActive }) => {
+  console.log(isActive);
   return isActive ? s.activeLink : s.link;
 };
 

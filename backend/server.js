@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.post("/api/google", async (req, res) => {
-  // appendSpreadsheet(req.body);
+  appendSpreadsheet(req.body);
 });
 
 app.post("/api/telegram", async (req, res) => {
@@ -20,7 +20,7 @@ app.post("/api/telegram", async (req, res) => {
 });
 
 app.post("/api/email", (req, res) => {
-  // appendSendGrid(req.body);
+  appendSendGrid(req.body);
 });
 
 const port = process.env.PORT || 4000;

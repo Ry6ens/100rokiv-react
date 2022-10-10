@@ -1,6 +1,6 @@
 import { useForm, Controller } from "react-hook-form";
 import Select from "react-select";
-import PhoneInput, { isPossiblePhoneNumber } from "react-phone-number-input";
+import PhoneInput from "react-phone-number-input";
 import { ErrorMessage } from "@hookform/error-message";
 import { useDispatch, useSelector } from "react-redux";
 import moment from "moment";
@@ -52,7 +52,7 @@ export default function GiftVouchersForm() {
   return (
     <section className={s.section}>
       {emailSuccess === true ? (
-        <div className={s.successbox}>Дякуємо за замовлення</div>
+        <div className={s.successBox}>Дякуємо за замовлення</div>
       ) : (
         <form className={s.form} onSubmit={handleSubmit(onSubmit)}>
           <Controller
@@ -118,16 +118,14 @@ export default function GiftVouchersForm() {
             rules={{ required: "Обов'язкове поле" }}
             render={({ field: { onChange, value } }) => (
               <PhoneInput
-                // className={s.inputPhone}
                 maxLength="16"
                 value={value}
-                placeholder="(99) 999-99-99"
+                placeholder="+380 (99) 999-99-99"
                 name={"query"}
                 control={control}
                 onChange={onChange}
                 defaultCountry="UA"
                 international
-                // error={value && isPossiblePhoneNumber(value) ? "true" : "false"}
               />
             )}
           />

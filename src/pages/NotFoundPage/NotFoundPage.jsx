@@ -1,17 +1,9 @@
-import { Link, useLocation } from "react-router-dom";
-import { useMediaQuery } from "react-responsive";
+import { Link } from "react-router-dom";
 import $ from "jquery";
-
-import Navigation from "../../components/Navigation/Navigation";
 
 import s from "./NotFoundPage.module.scss";
 
 export default function NotFoundPage() {
-  const isDesktop = useMediaQuery({ minWidth: 1024 });
-
-  const location = useLocation();
-  const backLinkHref = location.state?.from ?? "/";
-
   var pageX = $(document).width();
   var pageY = $(document).height();
   var mouseY = 0;
@@ -70,7 +62,6 @@ export default function NotFoundPage() {
           </Link>
         </div>
       </section>
-      {isDesktop && <Navigation navClass="footer-navigation_desktop" />}
     </main>
   );
 }
