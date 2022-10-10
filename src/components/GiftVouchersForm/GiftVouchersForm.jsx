@@ -52,7 +52,9 @@ export default function GiftVouchersForm() {
   const customStyles = {
     menu: () => ({
       // none of react-select's styles are passed to <Control />
+      position: "absolute",
       width: 120,
+      backgroundColor: "#fdfbf8",
     }),
   };
 
@@ -69,7 +71,8 @@ export default function GiftVouchersForm() {
             render={({ field: { onChange, value } }) => (
               <Select
                 placeholder="Оберіть суму ..."
-                styles={customStyles}
+                className={s.select}
+                // styles={customStyles}
                 isClearable
                 onChange={onChange}
                 value={value}
