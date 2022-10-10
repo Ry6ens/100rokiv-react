@@ -79,7 +79,7 @@ export default function GiftVouchersForm() {
               <Select
                 placeholder="Оберіть суму ..."
                 className={s.select}
-                styles={customStyles}
+                // styles={customStyles}
                 isClearable
                 onChange={onChange}
                 value={value}
