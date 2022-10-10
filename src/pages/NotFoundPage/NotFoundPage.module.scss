@@ -14,12 +14,13 @@ $white: var(--color-text);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 240px
+    gap: 200px
     // justify-content: center;
     // height: 100vh;
 }
 
 .boxGhost {
+    margin-top: 40px;
     padding: 15px 25px 25px;
     position: relative;
     width: 200px;

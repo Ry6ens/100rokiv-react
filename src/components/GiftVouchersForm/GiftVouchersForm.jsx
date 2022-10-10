@@ -1,5 +1,5 @@
 import { useForm, Controller } from "react-hook-form";
-import ReactSelect from "react-select";
+import Select from "react-select";
 import PhoneInput, { isPossiblePhoneNumber } from "react-phone-number-input";
 import { ErrorMessage } from "@hookform/error-message";
 import { useDispatch, useSelector } from "react-redux";
@@ -49,6 +49,13 @@ export default function GiftVouchersForm() {
     reset();
   };
 
+  const customStyles = {
+    menu: () => ({
+      // none of react-select's styles are passed to <Control />
+      width: 120,
+    }),
+  };
+
   return (
     <section className={s.section}>
       {emailSuccess === true ? (
@@ -60,8 +67,9 @@ export default function GiftVouchersForm() {
             control={control}
             rules={{ required: "Обов'язкове поле" }}
             render={({ field: { onChange, value } }) => (
-              <ReactSelect
+              <Select
                 placeholder="Оберіть суму ..."
+                styles={customStyles}
                 isClearable
                 onChange={onChange}
                 value={value}
