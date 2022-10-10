@@ -49,22 +49,6 @@ export default function GiftVouchersForm() {
     reset();
   };
 
-  const customStyles = {
-    menu: () => ({
-      // none of react-select's styles are passed to <Control />
-      position: "absolute",
-      marginTop: 10,
-      width: "100%",
-      fontSize: 16,
-      zIndex: 100,
-      backgroundColor: "#fff",
-      borderColor: "#ccc",
-      borderRadius: 4,
-      borderStyle: "solid",
-      borderWidth: 1,
-    }),
-  };
-
   return (
     <section className={s.section}>
       {emailSuccess === true ? (
@@ -79,7 +63,6 @@ export default function GiftVouchersForm() {
               <Select
                 placeholder="Оберіть суму ..."
                 className={s.select}
-                // styles={customStyles}
                 isClearable
                 onChange={onChange}
                 value={value}
@@ -104,7 +87,7 @@ export default function GiftVouchersForm() {
             )}
           />
 
-          <label htmlFor="">
+          <label>
             <input
               className={s.input}
               {...register("name", {
@@ -115,7 +98,7 @@ export default function GiftVouchersForm() {
                 },
               })}
               type="text"
-              placeholder="Ім‘я та прізвище того, хто дарує"
+              placeholder="Ім‘я того, хто дарує"
             />
           </label>
           <ErrorMessage
@@ -135,7 +118,7 @@ export default function GiftVouchersForm() {
             rules={{ required: "Обов'язкове поле" }}
             render={({ field: { onChange, value } }) => (
               <PhoneInput
-                // className={s.input}
+                // className={s.inputPhone}
                 maxLength="16"
                 value={value}
                 placeholder="(99) 999-99-99"
@@ -144,7 +127,7 @@ export default function GiftVouchersForm() {
                 onChange={onChange}
                 defaultCountry="UA"
                 international
-                error={value && isPossiblePhoneNumber(value) ? "true" : "false"}
+                // error={value && isPossiblePhoneNumber(value) ? "true" : "false"}
               />
             )}
           />

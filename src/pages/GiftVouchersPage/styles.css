@@ -35,7 +35,7 @@
     height: 38px;
 
     font-family: var(--font-family-light);
-    font-size: var(--text-size);
+    font-size: 16px;
     font-weight: 300;
     line-height: var(--line-height);
     letter-spacing: var(--letter-spacing);
