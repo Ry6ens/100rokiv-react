@@ -59,7 +59,28 @@
 }
 
 .link {
+position: relative;
+
     color: var(--color-text-invert);
+
+    &::after {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 0%;
+            background-color: var(--color-text-invert);;
+            height: 1px;
+            bottom: -6px;
+            transition: width 0.2s;
+            pointer-events: none;
+        }
+    
+        &:hover:after,
+        :focus:after {
+            width: 100%;
+            color: var(--color-text-invert);;
+        }
 }
 
 .logo {

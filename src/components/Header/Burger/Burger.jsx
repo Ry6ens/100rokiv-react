@@ -14,6 +14,10 @@ export default function Burger() {
     document.body.classList.toggle("no-scroll");
   };
 
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
+
   return (
     <>
       <div
@@ -25,7 +29,7 @@ export default function Burger() {
           <span className="hamburger-inner"></span>
         </span>
         <div className="hamburger-menu_nav">
-          <Navigation navClass="hamburger-menu_list" />
+          <Navigation navClass="hamburger-menu_list" onClick="scrollTop" />
           <div className="hamburger-menu_mobile">
             <ul className="hamburger-menu_list">
               <li className="hamburger-menu_item">
@@ -47,12 +51,14 @@ export default function Burger() {
                 </a>
               </li>
               <li className="hamburger-menu_item">
-                <NavLink to="/privacy-policy">
+                <NavLink to="/privacy-policy" onClick={scrollTop}>
                   Політика конфіденційності
                 </NavLink>
               </li>
               <li className="hamburger-menu_item">
-                <NavLink to="/public-offer">Публічна оферта</NavLink>
+                <NavLink to="/public-offer" onClick={scrollTop}>
+                  Публічна оферта
+                </NavLink>
               </li>
             </ul>
             <address className="hamburger-address_item">

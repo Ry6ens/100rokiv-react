@@ -10,6 +10,10 @@ export default function Footer() {
   // const isTablet = useMediaQuery({ minWidth: 768 });
   const isDesktop = useMediaQuery({ minWidth: 1024 });
 
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
+
   return (
     <footer>
       {isDesktop && <Navigation navClass="footer-navigation_desktop" />}
@@ -25,22 +29,10 @@ export default function Footer() {
         <p className={s.titleBottom}>© 100 років тому вперед</p>
         {isDesktop && (
           <div className={s.social}>
-            <Link
-              to="/privacy-policy"
-              className={s.link}
-              onClick={() => {
-                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-              }}
-            >
+            <Link to="/privacy-policy" className={s.link} onClick={scrollTop}>
               Політика конфіденційності
             </Link>
-            <Link
-              to="/public-offer"
-              className={s.link}
-              onClick={() => {
-                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-              }}
-            >
+            <Link to="/public-offer" className={s.link} onClick={scrollTop}>
               Публічна оферта
             </Link>
             <a
@@ -48,13 +40,7 @@ export default function Footer() {
               rel="noreferrer"
               target="_blank"
             >
-              <Facebook
-                width="30"
-                height="30"
-                onClick={() => {
-                  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-                }}
-              />
+              <Facebook width="30" height="30" />
             </a>
             <a
               href="https://www.instagram.com/100rokivtomuvpered"
