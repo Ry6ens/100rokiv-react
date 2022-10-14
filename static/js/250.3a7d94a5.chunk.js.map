@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/250.3a7d94a5.chunk.js","mappings":"iLAAe,SAASA,IACtB,OAAO,uBACR,C","sources":["pages/PublicOfferPage/PublicOfferPage.jsx"],"sourcesContent":["export default function PublicOfferPage() {\n  return <></>;\n}\n"],"names":["PublicOfferPage"],"sourceRoot":""}
