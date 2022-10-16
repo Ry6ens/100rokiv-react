@@ -1,0 +1,101 @@
+@use '../../styles/mixins';
+
+.form {
+    padding: 10px 20px 30px 20px;
+}
+
+.title {
+    font-size: var(--text-title);
+    line-height: var(--line-height-title);
+    letter-spacing: var(--letter-spacing-title);
+}
+
+.infoData {
+
+    font-size: 10px;
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+}
+
+.input {
+    width: 75px;
+    height: 38px;
+
+    margin-top: 5px;
+    padding: 2px 8px;
+
+    font-family: var(--font-family-light);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+    text-transform: initial;
+
+    background-color: var(--color-bg);
+
+    border: 1px solid hsl(0, 0%, 80%);
+
+    @include mixins.mq(tablet) {
+        height: 48px;
+    }
+}
+
+.overlayPrice {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+
+    margin-top: 20px;
+}
+
+.textPrice {
+    font-size: var(--text-title);
+    line-height: var(--line-height-title);
+    letter-spacing: var(--letter-spacing-title);
+}
+
+.textPriceSymbol {
+    text-transform: lowercase;
+
+    font-size: 16px;
+    line-height: var(--line-height-title);
+    letter-spacing: var(--letter-spacing-title);
+}
+
+.textIntro {
+    font-size: 10px;
+    text-transform: capitalize;
+}
+
+.productAdd {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-top: 20px;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    width: 180px;
+    height: 38px;
+
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: var(--letter-spacing);
+    text-transform: var(--text-transform);
+
+
+    background-color: #46B37A;
+    color: #fff;
+    border-color: transparent;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 0%);
+
+    @include mixins.mq(tablet) {
+        height: 48px;
+    }
+}

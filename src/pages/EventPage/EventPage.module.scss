@@ -1,0 +1,29 @@
+@use '../../styles/mixins';
+
+
+.img {
+    width: 100%;
+
+    @include mixins.mq(desktop) {
+        padding: 0px;
+    }
+}
+
+.text {
+    // margin: 25px 0px;
+    padding: 30px 20px;
+
+    font-family: var(--font-family-light);
+    font-size: 10px;
+    font-weight: 300;
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+    text-transform: initial;
+
+    white-space: pre-wrap;
+
+    @include mixins.mq(tablet) {
+        font-size: var(--text-size);
+    }
+}
+
