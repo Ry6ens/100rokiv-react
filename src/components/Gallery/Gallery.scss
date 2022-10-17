@@ -4,21 +4,13 @@
     padding: 30px 20px;
 }
 
-.galleryTitle {
-    margin-bottom: 25px;
-
-    font-size: var(--text-title);
-    line-height: var(--line-height);
-    letter-spacing: var(--letter-spacing);
-
-    text-align: center;
-}
-
 .galleryList {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 73vw 50vw;
     gap: 20px;
+
+    margin-top: 25px;
 
     @include mixins.mq(desktop) {
         grid-template-columns: repeat(4, 1fr);

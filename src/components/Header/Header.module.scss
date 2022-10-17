@@ -56,17 +56,6 @@
 .btnBook {
     position: relative;
 
-    font-size: var(--text-size);
-    line-height: var(--line-height);
-    letter-spacing: var(--letter-spacing-mobile);
-
-    color: var(--color-text);
-
-    // @include mixins.mq(tablet) {
-    //     font-size: var(--text-size);
-    //     letter-spacing: var(--letter-spacing);
-    // }
-
     &::after {
         content: "";
         position: absolute;

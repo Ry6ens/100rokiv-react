@@ -5,6 +5,7 @@ import "./Gallery.scss";
 import { items } from "./items";
 
 import Modal from "../Modal/Modal";
+import TitleH2 from "../TitleH2/TitleH2";
 
 export default function Gallery() {
   const [showModal, setShowModal] = useState(false);
@@ -30,7 +31,7 @@ export default function Gallery() {
 
   return (
     <section className="galleryPhotos">
-      <h2 className="galleryTitle">Галерея</h2>
+      <TitleH2 text="Галерея" />
       <div className="galleryList">{elements}</div>
       {showModal && (
         <Modal onClose={getModalImage}>

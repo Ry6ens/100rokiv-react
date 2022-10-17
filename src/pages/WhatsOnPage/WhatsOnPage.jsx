@@ -1,37 +1,34 @@
 import { Link } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 
-import s from "./WhatsOnPage.module.scss";
-
 import ChornozemFBIMG from "../../images/events/chornozemFB.jpg";
 import chornozemSQIMG from "../../images/events/chornozemSQ.jpg";
+
+import Section from "../../components/Section/Section";
+import Button from "../../components/Button/Button";
+import Image from "../../components/Image/Image";
+// import TitleH1 from "../../components/TitleH1/TitleH1";
+// import Text from "../../components/Text/Text";
 
 export default function WhatsOnPage() {
   const isMobileTablet = useMediaQuery({ maxWidth: 1023.98 });
   const isDesktop = useMediaQuery({ minWidth: 1024 });
 
   return (
-    <section className={s.section}>
-      <h1 className={s.title}>Майбутні події</h1>
-      {/* <p className={s.text}>
-        Любий гостю нашого сайту, наразі ми не плануємо проводити Звану Вечерю
+    <Section>
+      {/* <TitleH1 text="Майбутні події" /> */}
+      {/* <Text
+        text="Любий гостю нашого сайту, наразі ми не плануємо проводити Звану Вечерю
         чи Театр Їжі. Майбутню подію ми обов'язково анонсуємо на наших
-        платформах — слідкуйте за оновленнями!
-      </p> */}
+        платформах — слідкуйте за оновленнями!"
+      /> */}
 
       <Link to="/event">
-        {isMobileTablet && (
-          <img src={chornozemSQIMG} alt="cover" className={s.img} />
-        )}
-        {isDesktop && (
-          <img src={ChornozemFBIMG} alt="cover" className={s.img} />
-        )}
+        {isMobileTablet && <Image src={chornozemSQIMG} alt="poster" />}
+        {isDesktop && <Image src={ChornozemFBIMG} alt="poster" />}
       </Link>
-      <div className={s.btnLink}>
-        <Link to="/event" className={s.btnBook}>
-          Дізнатися більше
-        </Link>
-      </div>
-    </section>
+
+      <Button to="/event" text="Дізнатися більше" />
+    </Section>
   );
 }

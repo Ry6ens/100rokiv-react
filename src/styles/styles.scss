@@ -12,7 +12,7 @@
     --line-height-title: 1.7;
     --letter-spacing-title: 0.06em;
 
-    --text-size: 14px;
+    --text-size: 12px;
     --line-height: 2;
     --letter-spacing: 0.24em;
 
@@ -30,17 +30,21 @@
     --color-bg-line: #F6F3EE;
 
     --text-transform: uppercase;
+    --text-align: center;
+
 }
 
 body {
     font-family: var(--font-family);
     font-size: var(--text-size);
+    line-height: var(--line-height);
     letter-spacing: var(--letter-spacing);
 
     color: var(--color-text);
     background-color: var(--color-bg);
 
     text-transform: var(--text-transform);
+    text-align: var(--text-align);
 
     &.no-scroll {
         overflow: hidden;

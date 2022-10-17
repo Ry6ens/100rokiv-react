@@ -1,23 +1,8 @@
-@use '../../styles/mixins';
-
-// @import url(https://fonts.googleapis.com/css?family=Ubuntu);
-//variables
 $purple: var(--color-bg);
 $l-purple: var(--color-bg);
 $t-purple: var(--color-text);
 $pink: #FF5E65;
 $white: var(--color-text);
-
-.section {
-    padding: 0px 20px 30px 20px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 200px
-    // justify-content: center;
-    // height: 100vh;
-}
 
 .boxGhost {
     margin-top: 40px;
@@ -224,104 +209,6 @@ $white: var(--color-text);
 
         &:after {
             transform: rotate(180deg);
-        }
-    }
-}
-
-// .box {
-    // width: 350px;
-    // height: 100%;
-    // max-height: 600px;
-    // min-height: 450px;
-    // border-radius: 20px;
-    // position: absolute;
-    // left: 50%;
-    // top: 50%;
-    // transform: translate(-50%, -50%);
-    // padding: 30px 20px;
-// }
-
-.boxDescription {
-    // position: absolute;
-    // bottom: 30px;
-    // left: 50%;
-    // transform: translateX(-50%);
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.boxDescriptionContainer {
-    // color: $white;
-    text-align: center;
-    // width: 100vw;
-    // font-size: 16px;
-    // margin: 0 auto;
-    // padding: 0px 20px;
-}
-
-.boxDescriptionTitle {
-    font-size: var(--text-title);
-    line-height: var(--line-height);
-    letter-spacing: var(--letter-spacing);
-}
-
-.boxDescriptionText {
-    // color: $t-purple;
-    // line-height: 20px;
-    // margin-top: 20px;
-
-    font-family: var(--font-family-light);
-    font-size: var(--text-size);
-    font-weight: 300;
-    line-height: var(--line-height);
-    letter-spacing: var(--letter-spacing);
-}
-
-.boxButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    // position: relative;
-    background: #46B37A;
-    border: 1px solid transparent;
-    border-radius: 50px;
-    width: 280px;
-    height: 38px;
-
-    text-align: center;
-    // text-decoration: none;
-    color: #fff;
-    // line-height: 50px;
-    // font-size: 18px;
-    // padding: 0 70px;
-    // white-space: nowrap;
-    margin-top: 30px;
-    // transition: background .5s ease;
-    // overflow: hidden;
-    // -webkit-mask-image: -webkit-radial-gradient(white, black);
-
-    // &:before {
-    //     content: '';
-    //     position: absolute;
-    //     width: 20px;
-    //     height: 100px;
-    //     background: $white;
-    //     bottom: -25px;
-    //     left: 0;
-    //     border: 2px solid $white;
-    //     transform: translateX(-50px) rotate(45deg);
-    //     transition: transform .5s ease;
-    // }
-
-    &:hover {
-        background: transparent;
-        border-color: $white;
-
-        &:before {
-            transform: translateX(250px) rotate(45deg);
         }
     }
 }

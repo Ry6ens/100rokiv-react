@@ -1,7 +1,10 @@
-import { Link } from "react-router-dom";
 import $ from "jquery";
 
-import s from "./NotFoundPage.module.scss";
+import Section from "../../components/Section/Section";
+import Ghost from "../../components/Ghost/Ghost";
+import TitleH2 from "../../components/TitleH2/TitleH2";
+import Text from "../../components/Text/Text";
+import Button from "../../components/Button/Button";
 
 export default function NotFoundPage() {
   var pageX = $(document).width();
@@ -25,43 +28,14 @@ export default function NotFoundPage() {
 
   return (
     <main>
-      <section className={s.section}>
-        {/* <div className={s.box}></div> */}
-        <div className={s.boxGhost}>
-          <div className={s.symbol}></div>
-          <div className={s.symbol}></div>
-          <div className={s.symbol}></div>
-          <div className={s.symbol}></div>
-          <div className={s.symbol}></div>
-          <div className={s.symbol}></div>
-
-          <div className={s.boxGhostContainer}>
-            <div className={s.boxGhostEyes} id="boxGhostEyes">
-              <div className={s.boxEyeLeft}></div>
-              <div className={s.boxEyeRight}></div>
-            </div>
-            <div className={s.boxGhostBottom}>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
-          <div className={s.boxGhostShadow}></div>
+      <Section sectionClass="sectionNotFound">
+        <Ghost />
+        <div>
+          <TitleH2 text="Загубилися?" />
+          <Text textClass="textLight" text="Почніть з головної сторінки" />
+          <Button to="/" text="Головна сторінка" buttonClass="boxButton" />
         </div>
-
-        <div className={s.boxDescription}>
-          <div className={s.boxDescriptionContainer}>
-            <h2 className={s.boxDescriptionTitle}>Загубилися?</h2>
-            <p className={s.boxDescriptionText}>Почніть з головної сторінки</p>
-          </div>
-
-          <Link to="/" className={s.boxButton}>
-            Головна сторінка
-          </Link>
-        </div>
-      </section>
+      </Section>
     </main>
   );
 }

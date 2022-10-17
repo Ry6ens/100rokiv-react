@@ -1,21 +1,37 @@
 import GroundIMG from "../../images/ground.jpeg";
 
-import Title from "../../components/Title/Title";
+import TitleH1 from "../../components/TitleH1/TitleH1";
+import Text from "../../components/Text/Text";
+import Section from "../../components/Section/Section";
+import Image from "../../components/Image/Image";
 import Gallery from "../../components/Gallery/Gallery";
 import Menu from "../../components/Menu/Menu";
+import Button from "../../components/Button/Button";
 
 export default function GroundPage() {
   return (
     <main>
-      <Title
-        img={GroundIMG}
-        title="Перший поверх"
-        textParag1="Входячи, ви потрапляєте до затишної, оздобленої натуральним деревом зали."
-        textParag2="Це найкраще місце для того, щоб насолодитися смаком України у великій компанії - друзів,
+      <Image src={GroundIMG} alt="groundFloor" imgClass="imgFloor" />
+
+      <Section>
+        <TitleH1 text="Перший поверх" />
+        <Text
+          textClass="textLight"
+          text="Входячи, ви потрапляєте до затишної, оздобленої натуральним деревом зали."
+        />
+        <Text
+          textClass="textLight"
+          text="Це найкраще місце для того, щоб насолодитися смаком України у великій компанії - друзів,
       родини або просто знайомих."
-        textParag3="Тут, до речі, знаходиться наш бар, де народжуються авторські коктейлі - унікальні напої з
+        />
+        <Text
+          textClass="textLight"
+          text="Тут, до речі, знаходиться наш бар, де народжуються авторські коктейлі - унікальні напої з
       місцевих інгредієнтів.<br> Уявіть, як це чудово - спостерігати за тим, як створюється саме ваш!"
-      />
+        />
+        <Button to="/book" text="Забронювати столик" />
+      </Section>
+
       <Menu />
       <Gallery />
     </main>

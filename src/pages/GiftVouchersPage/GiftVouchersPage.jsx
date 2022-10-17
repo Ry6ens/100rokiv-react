@@ -1,31 +1,27 @@
 import { useSelector } from "react-redux";
 
-import Title from "../../components/Title/Title";
+import Section from "../../components/Section/Section";
+import TitleH1 from "../../components/TitleH1/TitleH1";
+import Text from "../../components/Text/Text";
 import GiftVouchersForm from "../../components/GiftVouchersForm/GiftVouchersForm";
 import Loader from "../../components/Loader/Loader";
 
 import { getEmailLoading } from "../../redux/email/email-selectors";
-
-// import s from "./GiftVouchersPage.module.scss";
-import "./styles.scss";
 
 function GiftVouchersPage() {
   const emailLoading = useSelector(getEmailLoading);
 
   return (
     <main>
-      <Title
-        // img={KlopotenkoIMG}
-        containerClass="containerGiftVoucher"
-        imgClass="none"
-        title="Сертифікат"
-        textClass="textFounders"
-        textParag1="Ми дуже хочемо, аби ви мали нагоду подарувати новий гастрономічний досвід своїм близьким людям. З цією думкою ми зробили подарункові сертифікати на суми від 1000 грн."
-        textParag2="Щасливчик може завітати у наш ресторан протягом 6 місяців від дати придбання сертифікату. Зауважте, сертифікат не діє на замовлення страв і напоїв на доставку або купівлю квитків на наші події – Звану Вечерю чи Театр Їжі."
-        textParag3="Радимо не друкувати електронний сертифікат – нам достатньо переглянути його на екрані смартфону."
-        btnBook={false}
-      />
-      {emailLoading === true ? <Loader /> : <GiftVouchersForm />}
+      <Section>
+        <TitleH1 text="Сертифікат" />
+        <Text text="Ми дуже хочемо, аби ви мали нагоду подарувати новий гастрономічний досвід своїм близьким людям. З цією думкою ми зробили подарункові сертифікати на суми від 1000 грн." />
+        <Text text="Щасливчик може завітати у наш ресторан протягом 6 місяців від дати придбання сертифікату. Зауважте, сертифікат не діє на замовлення страв і напоїв на доставку або купівлю квитків на наші події – Звану Вечерю чи Театр Їжі." />
+        <Text text="Радимо не друкувати електронний сертифікат – нам достатньо переглянути його на екрані смартфону." />
+      </Section>
+      <Section>
+        {emailLoading === true ? <Loader /> : <GiftVouchersForm />}
+      </Section>
     </main>
   );
 }

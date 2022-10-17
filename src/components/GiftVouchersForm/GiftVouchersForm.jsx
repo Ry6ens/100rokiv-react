@@ -16,6 +16,7 @@ import { successFalse } from "../../redux/email/email-slice";
 import { ReactComponent as Warning } from "../../images/svg/warning.svg";
 
 import s from "./GiftVouchersForm.module.scss";
+import "./styles.scss";
 
 export default function GiftVouchersForm() {
   const dispatch = useDispatch();
@@ -50,7 +51,7 @@ export default function GiftVouchersForm() {
   };
 
   return (
-    <section className={s.section}>
+    <>
       {emailSuccess === true ? (
         <div className={s.successBox}>Дякуємо за замовлення</div>
       ) : (
@@ -145,6 +146,6 @@ export default function GiftVouchersForm() {
           </button>
         </form>
       )}
-    </section>
+    </>
   );
 }

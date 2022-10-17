@@ -1,20 +1,32 @@
 import RedRoomIMG from "../../images/redroom.jpeg";
 
-import Title from "../../components/Title/Title";
-
+import TitleH1 from "../../components/TitleH1/TitleH1";
+import Text from "../../components/Text/Text";
+import Section from "../../components/Section/Section";
+import Image from "../../components/Image/Image";
 import Gallery from "../../components/Gallery/Gallery";
 import Menu from "../../components/Menu/Menu";
+import Button from "../../components/Button/Button";
 
 export default function RedRoomPage() {
   return (
     <main>
-      <Title
-        img={RedRoomIMG}
-        title="Червона зала"
-        textParag1="Магічний простір, де ми проводимо Театр їжі та зустрічаємо невеликі компанії, що прагнуть приватності."
-        textParag2="Це чудове місце для невеликого, але дуже красивого весілля, дня народження або просто посиденьок компанії в теплій,
+      <Image src={RedRoomIMG} alt="redroom" imgClass="imgFloor" />
+
+      <Section>
+        <TitleH1 text="Червона зала" />
+        <Text
+          textClass="textLight"
+          text="Магічний простір, де ми проводимо Театр їжі та зустрічаємо невеликі компанії, що прагнуть приватності."
+        />
+        <Text
+          textClass="textLight"
+          text="Це чудове місце для невеликого, але дуже красивого весілля, дня народження або просто посиденьок компанії в теплій,
     камерній атмосфері."
-      />
+        />
+        <Button to="/book" text="Забронювати столик" />
+      </Section>
+
       <Menu />
       <Gallery />
     </main>
