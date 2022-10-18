@@ -32,7 +32,7 @@ export default function NotFoundPage() {
         <Ghost />
         <div>
           <TitleH2 text="Загубилися?" />
-          <Text textClass="textLight" text="Почніть з головної сторінки" />
+          <Text text="Почніть з головної сторінки" />
           <Button to="/" text="Головна сторінка" buttonClass="boxButton" />
         </div>
       </Section>

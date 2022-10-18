@@ -27,14 +27,15 @@ export default function UserRoutes() {
         <Route path="/menu" element={<MenuPage />} />
         <Route path="/delivery" element={<DeliveryPage />} />
         <Route path="/gift-vouchers" element={<GiftVouchersPage />} />
-        <Route path="/whats-on" element={<WhatsOnPage />} />
+        <Route path="/whats-on" element={<WhatsOnPage />}>
+          <Route path="event" element={<EventPage />} />
+        </Route>
         <Route path="/founders" element={<FoundersPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="/public-offer" element={<PublicOfferPage />} />
         <Route path="/ground" element={<GroundPage />} />
         <Route path="/above" element={<AbovePage />} />
         <Route path="/redroom" element={<RedRoomPage />} />
-        <Route path="/event" element={<EventPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Suspense>
