@@ -1,12 +1,17 @@
 import { Link } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
+import { useSelector } from "react-redux";
 
 import Burger from "./Burger/Burger";
 import s from "./Header.module.scss";
 
+import BasketIcon from "../BasketForm/BasketIcon/BasketIcon";
+
 export default function Header() {
   const isMobileTablet = useMediaQuery({ maxWidth: 1023.98 });
   const isDesktop = useMediaQuery({ minWidth: 1024 });
+
+  const tickets = useSelector((store) => store.tickets.items);
 
   return (
     <header className={s.header}>
@@ -25,7 +30,7 @@ export default function Header() {
 
       {isMobileTablet && <Burger />}
 
-      <div className={s.overlay}>
+      {/* <div className={s.overlay}>
         {isDesktop && (
           <a className={s.tel} href="tel:+380680686975">
             Тел: +38 (068) 068-69-75
@@ -35,7 +40,23 @@ export default function Header() {
         <Link to="/book" className={s.btnBook}>
           Бронювання
         </Link>
-      </div>
+      </div> */}
+
+      {tickets.length ? (
+        <BasketIcon />
+      ) : (
+        <div className={s.overlay}>
+          {isDesktop && (
+            <a className={s.tel} href="tel:+380680686975">
+              Тел: +38 (068) 068-69-75
+            </a>
+          )}
+
+          <Link to="/book" className={s.btnBook}>
+            Бронювання
+          </Link>
+        </div>
+      )}
     </header>
   );
 }

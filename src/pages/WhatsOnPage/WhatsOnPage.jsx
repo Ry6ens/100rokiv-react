@@ -17,6 +17,10 @@ export default function WhatsOnPage() {
   const isMobileTablet = useMediaQuery({ maxWidth: 1023.98 });
   const isDesktop = useMediaQuery({ minWidth: 1024 });
 
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
+
   let isOutlet = true;
 
   if (location.pathname === "/whats-on/event") {
@@ -26,7 +30,7 @@ export default function WhatsOnPage() {
   return (
     <main>
       <Section>
-        {isOutlet && <TitleH1 text="Майбутні події" />}
+        {isOutlet && <TitleH1 text="Майбутні події" titleClass="titleBottom" />}
 
         {/* <Text
         text="Любий гостю нашого сайту, наразі ми не плануємо проводити Звану Вечерю
@@ -34,12 +38,14 @@ export default function WhatsOnPage() {
         платформах — слідкуйте за оновленнями!"
       /> */}
 
-        <Link to="event">
+        <Link to="event" onClick={scrollTop}>
           {isMobileTablet && <Image src={chornozemSQIMG} alt="poster" />}
           {isDesktop && <Image src={ChornozemFBIMG} alt="poster" />}
         </Link>
 
-        {isOutlet && <Button to="event" text="Дізнатися більше" />}
+        {isOutlet && (
+          <Button to="event" text="Дізнатися більше" onClick={scrollTop} />
+        )}
       </Section>
       <Outlet />
     </main>

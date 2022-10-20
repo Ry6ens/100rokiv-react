@@ -16,6 +16,9 @@
         height: 70px;
 
         flex-direction: row;
+    }
+
+    @include mixins.mq(desktop) {
         justify-content: space-between;
     }
 }

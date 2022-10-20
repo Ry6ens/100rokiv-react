@@ -1,5 +1,5 @@
 import s from "./TitleH1.module.scss";
 
-export default function Title({ text }) {
-  return <h1 className={s.title}>{text}</h1>;
+export default function Title({ titleClass = "title", text }) {
+  return <h1 className={s[titleClass]}>{text}</h1>;
 }

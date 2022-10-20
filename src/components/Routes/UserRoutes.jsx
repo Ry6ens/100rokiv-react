@@ -17,6 +17,8 @@ const GroundPage = lazy(() => import("../../pages/GroundPage"));
 const AbovePage = lazy(() => import("../../pages/AbovePage"));
 const RedRoomPage = lazy(() => import("../../pages/RedRoomPage"));
 const EventPage = lazy(() => import("../../pages/EventPage"));
+const BasketPage = lazy(() => import("../../pages/BasketPage"));
+const CheckoutPage = lazy(() => import("../../pages/CheckoutPage"));
 
 export default function UserRoutes() {
   return (
@@ -25,7 +27,6 @@ export default function UserRoutes() {
         <Route path="/" element={<HomePage />} />
         <Route path="/book" element={<BookPage />} />
         <Route path="/menu" element={<MenuPage />} />
-        <Route path="/delivery" element={<DeliveryPage />} />
         <Route path="/gift-vouchers" element={<GiftVouchersPage />} />
         <Route path="/whats-on" element={<WhatsOnPage />}>
           <Route path="event" element={<EventPage />} />
@@ -36,6 +37,10 @@ export default function UserRoutes() {
         <Route path="/ground" element={<GroundPage />} />
         <Route path="/above" element={<AbovePage />} />
         <Route path="/redroom" element={<RedRoomPage />} />
+        <Route path="/basket" element={<BasketPage />}>
+          <Route path="delivery" element={<DeliveryPage />} />
+          <Route path="checkout" element={<CheckoutPage />} />
+        </Route>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Suspense>
